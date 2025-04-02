@@ -133,7 +133,7 @@ e.  **Run the Application:**
 
 * Copy the Google API key and add it inside strings.xml file in our project.
 
-## 6. Steps to Setup the Database
+## 6. Steps to Setup the PostgreSQL
 
 #### 1. Install the PostgreSQL
 
