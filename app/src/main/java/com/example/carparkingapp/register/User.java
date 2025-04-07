@@ -1,23 +1,23 @@
 package com.example.carparkingapp.register;
 
 import androidx.annotation.NonNull;
-
 import com.google.gson.annotations.SerializedName;
 
 public class User {
 
-    @SerializedName("userName")
+    @SerializedName("user_name")
     private String userName;
 
-    @SerializedName("userEmail")
+    @SerializedName("user_email")
     private String userEmail;
 
-    @SerializedName("userPassword")
+    @SerializedName("user_password")
     private String userPassword;
-    @SerializedName("userPhoneNo")
+
+    @SerializedName("user_phone_no")
     private long userPhoneNo;
 
-    @SerializedName("userAddress")
+    @SerializedName("user_address")
     private String userAddress;
 
     public User(String userName, String userEmail, String userPassword, long userPhoneNo, String userAddress) {
@@ -52,7 +52,7 @@ public class User {
         this.userName = userName;
     }
 
-    public void setEmail(String userEmail) {
+    public void setUserEmail(String userEmail) {
         this.userEmail = userEmail;
     }
 
@@ -75,7 +75,7 @@ public class User {
                 "userName='" + userName + '\'' +
                 ", userEmail='" + userEmail + '\'' +
                 ", userPassword='" + userPassword + '\'' +
-                ", userPhoneNo='" + userPhoneNo + '\'' +
+                ", userPhoneNo=" + userPhoneNo +
                 ", userAddress='" + userAddress + '\'' +
                 '}';
     }
