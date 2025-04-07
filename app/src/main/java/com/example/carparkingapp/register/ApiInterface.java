@@ -13,15 +13,13 @@ import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 public interface ApiInterface {
-    @POST("api/auth/register")
+    @POST("users")
     Call<User> postUser(@Body User user);
-    @GET("/api/auth/locations") // Endpoint for fetching parking locations
+    
+    @GET("locations") 
     Call<List<ParkingLocation>> getParkingLocations();
 
-    @POST("api/auth/login")
+    @POST("login")
     Call<LoginResponse> loginUser(@Body LoginRequest loginRequest);
-
-    @GET("/api/users/all")
-    Call<List<User>> getAllUsers();
 
 }
