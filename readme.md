@@ -39,7 +39,7 @@ This guide will walk you through the steps to set up Android Studio and run this
  g. Create a Desktop Entry (Optional but Recommended for Easy Launching)
 
     mkdir -p ~/.local/share/applications/
-nano ~/.local/share/applications/android-studio.desktop
+    nano ~/.local/share/applications/android-studio.desktop
 
 Paste the following content into the file (adjust the Path and Exec lines if you didn't move the folder to /opt):
 
@@ -100,10 +100,8 @@ Paste the following content into the file (adjust the Path and Exec lines if you
  a.  **Clone the Repository:**
     Open your terminal or command prompt and navigate to the directory where you want to store the project. Then, run the following command:
     
-    git clone <repository_url>
+    git clone https://github.com/Nehakumari3510/Car-Parking-Android-Project.git
     
-   Replace `<repository_url>` with the URL of this repository.
-
 b.  **Open the Project in Android Studio:**
     * Launch Android Studio.
     * In the welcome screen, select **"Open an existing project"**.
